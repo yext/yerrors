@@ -1,6 +1,6 @@
 
 
-# yerrors
+# yerrors [![GoDoc](https://godoc.org/github.com/yext/yerrors?status.svg)](http://godoc.org/github.com/yext/yerrors) [![Report card](https://goreportcard.com/badge/github.com/yext/yerrors)](https://goreportcard.com/report/github.com/yext/yerrors)
 `import "github.com/yext/yerrors"`
 
 * [Overview](#pkg-overview)
