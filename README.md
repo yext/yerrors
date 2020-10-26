@@ -7,7 +7,7 @@
 * [Index](#pkg-index)
 
 ## <a name="pkg-overview">Overview</a>
-Package yerrors wraps [golang.org/x/xerrors](golang.org/x/xerrors) to support a
+Package yerrors wraps [golang.org/x/xerrors](https://golang.org/x/xerrors) to support a
 no-context Wrapper.
 
 The party line is that error traces should include meaningful context at each
