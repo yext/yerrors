@@ -13,15 +13,15 @@
 //
 // Summary
 //
-//   - yerrors.Wrap will add a stack frame to the error without modifying the
-//     error's message, printed when formatted with "%+v", but not with "%v".
+// - yerrors.Wrap will add a stack frame to the error without modifying the
+//   error's message, printed when formatted with "%+v", but not with "%v".
 //
-//   - yerrors.Mask does the same thing, while preventing `As` or `Is` from
-//     introspecting the error it wraps.
+// - yerrors.Mask does the same thing, while preventing `As` or `Is` from
+//   introspecting the error it wraps.
 //
-//   - The above functionality depends on using yerrors.Errorf instead of
-//     xerrors.Errorf, so we also supply aliases to all of the commonly-used
-//     things within the xerrors package.
+// - The above functionality depends on using yerrors.Errorf instead of
+//   xerrors.Errorf, so we also supply aliases to all of the commonly-used
+//   things within the xerrors package.
 //
 // This package should be used to replace all xerrors usage, due to the last
 // point above.

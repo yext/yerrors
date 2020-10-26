@@ -1,7 +1,7 @@
 
 
 # yerrors
-`import "."`
+`import "github.com/yext/yerrors"`
 
 * [Overview](#pkg-overview)
 * [Index](#pkg-index)
@@ -20,18 +20,17 @@ that. The official solution (xerrors) does not.
 
 This package provides a no-context Wrapper that is compatible with xerrors.
 
-Summary
+### Summary
 
+- yerrors.Wrap will add a stack frame to the error without modifying the
+  error's message, printed when formatted with "%+v", but not with "%v".
 
-	- yerrors.Wrap will add a stack frame to the error without modifying the
-	  error's message, printed when formatted with "%+v", but not with "%v".
-	
-	- yerrors.Mask does the same thing, while preventing `As` or `Is` from
-	  introspecting the error it wraps.
-	
-	- The above functionality depends on using yerrors.Errorf instead of
-	  xerrors.Errorf, so we also supply aliases to all of the commonly-used
-	  things within the xerrors package.
+- yerrors.Mask does the same thing, while preventing `As` or `Is` from
+  introspecting the error it wraps.
+
+- The above functionality depends on using yerrors.Errorf instead of
+  xerrors.Errorf, so we also supply aliases to all of the commonly-used
+  things within the xerrors package.
 
 This package should be used to replace all xerrors usage, due to the last
 point above.
@@ -54,7 +53,7 @@ It would include only the two pieces of content in the error message:
 
 
 	err.Error() == fmt.Sprintf("%v", err)
-	
+
 	// Output: "some context: an error"
 
 See xerrors_test.go for a complete example.
@@ -72,7 +71,7 @@ See xerrors_test.go for a complete example.
 
 
 #### <a name="pkg-files">Package files</a>
-[doc.go](/src/target/doc.go) [fmt.go](/src/target/fmt.go) [xerrors.go](/src/target/xerrors.go) 
+[doc.go](/src/target/doc.go) [fmt.go](/src/target/fmt.go) [xerrors.go](/src/target/xerrors.go)
 
 
 
